@@ -1,0 +1,6 @@
+name: BlockyAPI
+version: '${project.version}'
+main: net.blockyislands.api.BlockyPlugin
+api-version: '1.20'
+authors: [MrMending]
+website: https://blockyislands.net
