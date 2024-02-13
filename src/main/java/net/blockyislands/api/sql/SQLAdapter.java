@@ -1,4 +1,4 @@
-package net.blockyislands.lib.sql;
+package net.blockyislands.api.sql;
 
 import org.bukkit.plugin.java.JavaPlugin;
 

@@ -1,4 +1,4 @@
-package net.blockyislands.lib.config;
+package net.blockyislands.api.config;
 
 
 import org.bukkit.configuration.file.FileConfiguration;

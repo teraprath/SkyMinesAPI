@@ -1,4 +1,4 @@
-package net.blockyislands.lib.sql;
+package net.blockyislands.api.sql;
 
 import javax.annotation.Nonnull;
 import java.util.ArrayList;

@@ -1,4 +1,4 @@
-package net.blockyislands.lib.sql;
+package net.blockyislands.api.sql;
 
 public enum SQLDataType {
 

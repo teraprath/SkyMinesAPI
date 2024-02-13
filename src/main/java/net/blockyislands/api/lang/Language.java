@@ -1,7 +1,7 @@
-package net.blockyislands.lib.lang;
+package net.blockyislands.api.lang;
 
-import net.blockyislands.lib.config.ConfigHandler;
-import net.blockyislands.lib.text.TextUtils;
+import net.blockyislands.api.config.ConfigHandler;
+import net.blockyislands.api.text.TextUtils;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;

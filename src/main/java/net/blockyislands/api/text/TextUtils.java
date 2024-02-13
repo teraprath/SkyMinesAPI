@@ -1,4 +1,4 @@
-package net.blockyislands.lib.text;
+package net.blockyislands.api.text;
 
 import org.bukkit.ChatColor;
 

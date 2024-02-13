@@ -1,4 +1,4 @@
-package net.blockyislands.lib.item;
+package net.blockyislands.api.item;
 
 import org.bukkit.Bukkit;
 import org.bukkit.Material;

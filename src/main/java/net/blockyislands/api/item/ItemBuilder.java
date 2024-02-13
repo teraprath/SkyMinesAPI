@@ -1,4 +1,4 @@
-package net.blockyislands.lib.item;
+package net.blockyislands.api.item;
 
 import net.kyori.adventure.text.Component;
 import org.bukkit.Material;
