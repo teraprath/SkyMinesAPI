@@ -24,11 +24,22 @@ public class BlockyAPI implements IBlockyAPI {
     }
 
     public IBlockyAPI init() {
-        Plugin apiPlugin = Bukkit.getServer().getPluginManager().getPlugin("BlockyAPI");
-        apiPlugin.getLogger().info("Plugin initialized: " + plugin.getName() + " version " + plugin.getDescription().getVersion() + " by " + plugin.getDescription().getAuthors().toString().replace("[", "").replace("]", ""));
 
         SQLAuth auth;
-        File file = new File(plugin.getDataFolder(), "config.yml");
+        File file;
+
+        if (!plugin.getName().equals("BlockyAPI")) {
+
+            Plugin apiPlugin = Bukkit.getServer().getPluginManager().getPlugin("BlockyAPI");
+            apiPlugin.getLogger().info("Plugin initialized: " + plugin.getName() + " version " + plugin.getDescription().getVersion() + " by " + plugin.getDescription().getAuthors().toString().replace("[", "").replace("]", ""));
+            file = new File(apiPlugin.getDataFolder(), "config.yml");
+
+        } else {
+
+            file = new File(plugin.getDataFolder(), "config.yml");
+
+        }
+
         FileConfiguration configuration = YamlConfiguration.loadConfiguration(file);
         String host = configuration.getString("database.host");
         int port = configuration.getInt("database.port");

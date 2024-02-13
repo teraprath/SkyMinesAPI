@@ -1,0 +1,6 @@
+name: BlockyAPI
+version: '1.4.2'
+main: net.blockyislands.plugin.BlockyPlugin
+api-version: '1.20'
+authors: [MrMending]
+website: https://blockyislands.net
