@@ -1,4 +1,4 @@
-package net.blockyislands.api.utils;
+package net.blockyislands.plugin.utils;
 
 import net.blockyislands.api.BlockyAPI;
 import net.blockyislands.lib.sql.SQLAdapter;

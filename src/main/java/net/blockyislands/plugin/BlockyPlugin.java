@@ -1,7 +1,8 @@
-package net.blockyislands.api;
+package net.blockyislands.plugin;
 
-import net.blockyislands.api.listener.LoginListener;
-import net.blockyislands.api.utils.SQLUtils;
+import net.blockyislands.api.BlockyAPI;
+import net.blockyislands.plugin.listener.LoginListener;
+import net.blockyislands.plugin.utils.SQLUtils;
 import org.bukkit.Bukkit;
 import org.bukkit.plugin.PluginManager;
 import org.bukkit.plugin.java.JavaPlugin;

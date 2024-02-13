@@ -1,7 +1,7 @@
-package net.blockyislands.api.listener;
+package net.blockyislands.plugin.listener;
 
-import net.blockyislands.api.BlockyPlugin;
-import net.blockyislands.api.utils.SQLUtils;
+import net.blockyislands.plugin.BlockyPlugin;
+import net.blockyislands.plugin.utils.SQLUtils;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerLoginEvent;

@@ -5,8 +5,8 @@
     <modelVersion>4.0.0</modelVersion>
 
     <groupId>net.blockyislands</groupId>
-    <artifactId>api</artifactId>
-    <version>1.3.5</version>
+    <artifactId>plugin</artifactId>
+    <version>1.4.0</version>
     <packaging>jar</packaging>
 
     <name>BlockyAPI</name>

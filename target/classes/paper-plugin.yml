@@ -1,5 +1,5 @@
 name: BlockyAPI
-version: '${project.version}'
+version: '1.4.0'
 main: net.blockyislands.plugin.BlockyPlugin
 api-version: '1.20'
 authors: [MrMending]
