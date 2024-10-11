@@ -1,6 +1,6 @@
-name: BlockyAPI
+name: SkyMinesAPI
 version: '${project.version}'
-main: net.blockyislands.plugin.BlockyPlugin
+main: eu.skymines.plugin.SkyMinesPlugin
 api-version: '1.20'
 authors: [MrMending]
-website: https://blockyislands.net
+website: https://skymines.eu
