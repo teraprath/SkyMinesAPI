@@ -43,7 +43,7 @@ public class ItemBuilder {
     }
 
     public ItemBuilder setName(@Nonnull Component component) {
-        this.meta.displayName();
+        this.meta.displayName(component);
         return this;
     }
 
