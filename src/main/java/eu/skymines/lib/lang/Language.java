@@ -1,7 +1,8 @@
 package eu.skymines.lib.lang;
 
 import eu.skymines.lib.config.ConfigHandler;
-import eu.skymines.lib.text.TextUtils;
+import net.kyori.adventure.text.Component;
+import net.kyori.adventure.text.minimessage.MiniMessage;
 import org.bukkit.configuration.ConfigurationSection;
 import org.bukkit.configuration.file.FileConfiguration;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -15,7 +16,7 @@ import java.util.concurrent.atomic.AtomicReference;
 public class Language extends ConfigHandler {
 
     private final Map<String, String> variables = new HashMap<>();
-    private final Map<String, String> messages = new HashMap<>();
+    private final Map<String, Component> messages = new HashMap<>();
     private String prefix;
 
     public Language(@NotNull JavaPlugin plugin) {
@@ -59,7 +60,8 @@ public class Language extends ConfigHandler {
                         }
                     });
 
-                    this.messages.put(key, TextUtils.colorize(result.get()));
+                    MiniMessage miniMessage = MiniMessage.miniMessage();
+                    this.messages.put(key, miniMessage.deserialize(result.get()));
                 }
             }
         }
@@ -71,12 +73,11 @@ public class Language extends ConfigHandler {
     @Override
     public void onPreSave(FileConfiguration config) {}
 
-    public String get(@Nonnull String key) {
-        String message = this.messages.get(key);
+    public Component get(@Nonnull String key) {
+        Component message = this.messages.get(key);
         if (message == null) {
-            return "§r§c" + key;
+            return Component.text(key);
         }
-
         return message;
     }
 
