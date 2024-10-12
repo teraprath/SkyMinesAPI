@@ -9,6 +9,7 @@ import org.bukkit.inventory.meta.ItemMeta;
 
 import javax.annotation.Nonnull;
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class ItemBuilder {
@@ -41,16 +42,13 @@ public class ItemBuilder {
         return this;
     }
 
-    public ItemBuilder setName(@Nonnull String displayName) {
-        this.meta.displayName(Component.text(displayName));
+    public ItemBuilder setName(@Nonnull Component component) {
+        this.meta.displayName();
         return this;
     }
 
-    public ItemBuilder setLore(@Nonnull String... strings) {
-        List<Component> lore = new ArrayList<>();
-        for (String string : strings) {
-            lore.add(Component.text(string));
-        }
+    public ItemBuilder setLore(@Nonnull Component... components) {
+        List<Component> lore = new ArrayList<>(Arrays.asList(components));
         this.meta.lore(lore);
         return this;
     }
