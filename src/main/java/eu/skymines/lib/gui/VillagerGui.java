@@ -12,12 +12,12 @@ import javax.annotation.Nonnull;
 import java.util.ArrayList;
 import java.util.List;
 
-public abstract class VillagerGUI {
+public abstract class VillagerGui {
 
     private Component title;
     private List<MerchantRecipe> recipes;
 
-    public VillagerGUI(@Nonnull Component title) {
+    public VillagerGui(@Nonnull Component title) {
         this.title = title;
         this.recipes = new ArrayList<>();
         create(); // Create recipes for the GUI
