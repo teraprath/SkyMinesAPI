@@ -1,32 +1,31 @@
-package eu.skymines.lib.menu;
+package eu.skymines.lib.gui;
 
-import eu.skymines.lib.menu.Menu;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.event.inventory.InventoryClickEvent;
 import org.bukkit.event.inventory.InventoryCloseEvent;
 import org.bukkit.event.inventory.InventoryOpenEvent;
 
-public class MenuListener implements Listener {
+public class GuiListener implements Listener {
 
     @EventHandler
     public void onInventoryClick(InventoryClickEvent event) {
-        if (event.getInventory().getHolder() instanceof Menu menu) {
-            menu.handleClick(event);
+        if (event.getInventory().getHolder() instanceof Gui gui) {
+            gui.handleClick(event);
         }
     }
 
     @EventHandler
     public void onInventoryOpen(InventoryOpenEvent event) {
-        if (event.getInventory().getHolder() instanceof Menu menu) {
-            menu.onOpen(event);
+        if (event.getInventory().getHolder() instanceof Gui gui) {
+            gui.onOpen(event);
         }
     }
 
     @EventHandler
     public void onInventoryClose(InventoryCloseEvent event) {
-        if (event.getInventory().getHolder() instanceof Menu menu) {
-            menu.onClose(event);
+        if (event.getInventory().getHolder() instanceof Gui gui) {
+            gui.onClose(event);
         }
     }
 }
